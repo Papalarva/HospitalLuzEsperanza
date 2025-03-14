@@ -1,0 +1,77 @@
+//Aqui esta el codigo base del hospital, el html no esta muy avanzado dado que el diseño se sigue progresando en Figma
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/indexDessing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Luz de Esperanza</title>
+</head>
+
+<body class="quicksand-LetraGlobal">
+    <!--En esta sección se trabaja en los elementos que existen en la barra inicial donde aparece el log-->
+    <section class="barraLogo">
+        <img src="" alt="HospitalLogo.jpg">
+        <h1>HOSPITAL LUZ DE ESPERANZA</h1>
+    </section>
+    <section>
+        <p>Bienvenidos al sitio web oficial del Hospital General y de Especialidades "Luz de Esperanza". Nos enorgullece
+            ser su mejor opción para consultas médicas, procedimientos y tratamientos especializados. Desde nuestra
+            fundación en el año 2005, hemos dedicado más de dos décadas a brindar atención de calidad, con un equipo
+            comprometido y tecnología de vanguardia para cuidar de su salud.</p>
+    </section>
+    <section>
+        <h3>Nuestros servicios</h3>
+        <img src="" alt="imagen1.jpg">
+        <img src="" alt="imagen3.jpg">
+        <img src="" alt="imagen4.jpg">
+        <img src="" alt="imagen5.jpg">
+        <img src="" alt="imagen6.jpg">
+        <img src="" alt="imagen7.jpg">
+    </section>
+    <section>
+        <h3>Especialidades</h3>
+        <ul>
+            <li>
+                especialidad1
+            </li>
+            <li>
+                especialidad2
+            </li>
+            <li>
+                especialidad3
+            </li>
+            <li>
+                especialidad4
+            </li>
+            <li>
+                especialidad5
+            </li>
+        </ul>
+        <ul>
+            <li>
+                especialidad6
+            </li>
+            <li>
+                especialidad7
+            </li>
+            <li>
+                especialidad8
+            </li>
+            <li>
+                especialidad9
+            </li>
+            <li>
+                especialidad10
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>
