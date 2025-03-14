@@ -1,0 +1,26 @@
+//css no final de la pagina index
+/*Aquí inician los ajustes responsivos, este ajuste es para la medida de telefono celular*/
+.quicksand-LetraGlobal{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+@media (max-width: 320px) {
+    body {
+      font-size: 14px;
+      background-color: white;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 11px;
+    }
+    h3{
+        font-weight: 650;
+    }
+    p{
+        font-weight: 400;
+    }
+  }
+
+  
