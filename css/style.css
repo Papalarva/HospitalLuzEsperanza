@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    max-width: 320px;
+  }
+  
+  .barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .barra-superior .logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .barra-superior .logo img {
+    max-width: 50px;
+    height: auto;
+  }
+  
+  .barra-superior .icono-llamada {
+    cursor: pointer;
+  }
+  
+  .barra-superior .menu-hamburguesa {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .menu-hamburguesa .menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-hamburguesa:hover .menu-desplegable {
+    display: block;
+  }
+  
+  .menu-desplegable a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+  }
+  
+  .menu-desplegable a:hover {
+    text-decoration: underline;
+  }
+  
+  .contenido-imagen {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    animation: aparecer-desde-izquierda 10s ease-out;
+  }
+  
+  @keyframes aparecer-desde-izquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  .contenido-imagen img {
+    width: 100%;
+  }
+  
+  .contenido-imagen .texto-sobre-imagen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .rectangulo-crema {
+    background-color: #F2D0A7;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    animation: aparecer-desde-abajo 10s ease-out;
+  }
+  
+  @keyframes aparecer-desde-abajo {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes aparecer-desde-izquierda {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
