@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
@@ -40,7 +41,40 @@
         </section>
     </header>
     <main>
-
+        <section class="servicios">
+            <h3 class="secciones__subtitulos">Nuestros</h3>
+            <h2 class="secciones__titulos">Servicios</h2>
+            <section class="splide" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="sevicios__cartas">
+                                <img class="cartas__img" src="assets/img/portada.jpg" alt="">
+                                <h3>Servicio</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non sunt praesentium, et doloremque deserunt cupiditate rem, laborum modi exercitationem, ipsam facere? Neque, libero voluptate saepe ex quia veritatis nobis.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicios__cartas">
+                                <img class="cartas__img" src="assets/img/portada.jpg" alt="">
+                                <h3>Servicio</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non sunt praesentium, et doloremque deserunt cupiditate rem, laborum modi exercitationem, ipsam facere? Neque, libero voluptate saepe ex quia veritatis nobis.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicios__cartas">
+                                <img class="cartas__img" src="assets/img/portada.jpg" alt="">
+                                <h3>Servicio</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non sunt praesentium, et doloremque deserunt cupiditate rem, laborum modi exercitationem, ipsam facere? Neque, libero voluptate saepe ex quia veritatis nobis.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
     </main>
     <footer>
 
@@ -56,6 +90,18 @@
             console.log(menu);
             menu.classList.toggle('header__menu--activo');
         }
+        document.addEventListener( 'DOMContentLoaded', function() {
+            var splide = new Splide( '.splide', {
+                classes: { 
+		                arrow : 'splide__arrow displayNone',
+                        pagination: 'splide__pagination displayNone',
+		                page      : 'splide__pagination__page displayNone', 
+                },
+            } );
+            splide.mount();
+            
+        } );
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html>
