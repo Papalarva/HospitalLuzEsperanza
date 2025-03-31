@@ -120,3 +120,40 @@ body {
       transform: translateX(0);
     }
   }
+
+  /*Nuestros servicios*/
+  .nuestros-servicios {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+.especialidad {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+}
+.especialidad img {
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%; /* Si deseas bordes redondeados */
+}
+/* CSS para el botón especialidades*/
+.boton-redireccion {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-redireccion:hover {
+  background-color: #0056b3;
+}
