@@ -129,7 +129,7 @@
     font-weight: bold;
     font-size: 1.25rem;
 }
-.servicios {
+.servicios, .nosotros, .especialidades {
     padding: 1rem 2rem; 
     gap: 1rem;
 }
