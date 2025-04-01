@@ -211,14 +211,56 @@
                 </section> 
             </div>
         </section>
-        <!-- FORMULARIO -->
+        <div class="secciones__grande">
+            <!-- FORMULARIO -->
         <section class="contacto">
             <h3 class="secciones__subtitulos">No dudes en</h3>
             <h2 class="secciones__titulos">Contactarnos</h2>
+            <div>
+                <form method="POST" class="formulario" id="formulario">
+                    <label for="nombre" class="formulario__label">
+                        <input type="text" id="nombre" placeholder=" " class="formulario__input">
+                        <span class="formulario__placeholder">Nombre</span>
+                        <span class="error" id="error-nombre"></span>
+                    </label>
+                    <label for="apellidoPa" class="formulario__label">
+                        <input type="text" id="apellidoPa" placeholder=" " class="formulario__input">
+                        <span class="formulario__placeholder">Apellido paterno</span>
+                        <span class="error" id="error-apellidoPa"></span>
+                    </label>
+                    <label for="apellidoMa" class="formulario__label">
+                        <input type="text" id="apellidoMa" placeholder=" " class="formulario__input">
+                        <span class="formulario__placeholder">Apellido materno</span>
+                        <span class="error" id="error-apellidoMa"></span>
+                    </label>
+                    <label for="edad" class="formulario__label">
+                        <input type="number" id="edad" placeholder=" " class="formulario__input" min="10">
+                        <span class="formulario__placeholder">Teléfono</span>
+                        <span class="error" id="error-edad"></span>
+                    </label>
+                    <label for="email" class="formulario__label">
+                        <input type="email" id="email" placeholder=" " class="formulario__input">
+                        <span class="formulario__placeholder">Correo</span>
+                        <span class="error" id="error-email"></span>
+                    </label> 
+                    <label for="mensaje" class="formulario__label formulario__mensaje">
+                        <textarea type="email" id="men" placeholder=" " class="formulario__input"></textarea>
+                        <span class="formulario__placeholder" style="height: min-content;">Mensaje</span>
+                    </label>
+                </form>
+            </div>
         </section>
+        <!-- UBICANOS -->
+        <section class="ubicacion">
+            <h3 class="secciones__subtitulos">No dudes en</h3>
+            <h2 class="secciones__titulos">Venir</h2>
+            <iframe class="ubicacion__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54291.12108433445!2d-106.53254628181458!3d31.737876105768567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75998aab8c9e1%3A0x858f862537ffe340!2sHospital%20General%20de%20Ciudad%20Ju%C3%A1rez!5e0!3m2!1ses!2smx!4v1743520342726!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <img class="menu__logo" src="assets/img/logo.png" alt="">
+                    <h3 class="menu__nombre">Hospital Luz de Esperanza</h3>
     </footer>
     <script>
         function abrirMenu() {

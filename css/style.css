@@ -135,7 +135,7 @@ body {
     font-weight: bold;
     font-size: 1.25rem;
 }
-.servicios, .nosotros, .especialidades, .atencion, .contacto {
+.servicios, .nosotros, .especialidades, .atencion, .contacto, .ubicacion {
     padding: 1rem 2rem; 
     gap: 1rem;
 }
@@ -242,6 +242,92 @@ body {
     padding: 0 0.5rem; 
 }
 
+/* FORMULARIO */
+.formulario { 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    margin-top: 2rem;
+}
+
+.formulario__label {
+    display: grid;
+    grid-template-areas: "input";
+} 
+
+.formulario__placeholder {
+    grid-area: input;
+    width: max-content;
+    padding: 15px;
+    color: gray;
+    transition: transform .2s ease-in-out;
+}
+
+.formulario__input {
+    grid-area: input;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.formulario__input:focus-visible {
+    outline: 1px solid #0b57d0;
+}
+
+.formulario__input:is(:focus, :not(:placeholder-shown))+.formulario__placeholder {
+    padding: 15px 10px;
+    transform: translate(-5%, -60%) scale(0.8);
+    background-color: white;
+    color: #0b57d0;
+}
+
+.formulario__input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contenedor__botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formulario__boton {
+    width: 100px;
+    border: none;
+    background-color: #0b57d0;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.formulario__boton:hover {
+    background-color: #0a4fbe;
+}
+.formulario__mensaje {
+    margin-top: 0.5rem;
+}
+
+/* UBICACIÓN */
+.ubicacion__iframe {
+    width: 100%;
+    border-radius: 1rem;
+    max-height: 400px;
+}
+
+.footer {
+    display: flex;
+    gap: 2rem; 
+    flex-wrap: wrap; 
+    background-color: var(--crema);
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center; 
+} 
 
 @media screen and (min-width:767px)   {
     .header__container {
@@ -255,18 +341,23 @@ body {
     }
     .menu__lista{
         flex-direction: row;
-        align-items: stretch;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
     }
     .menu__cerrar {
         display: none;
     } 
     .menu__elemento {
-        padding: 0;
-        display: flex;
-        align-items: center;
+        padding: 0; 
+        width: max-content;
+        border: none;
     }
     .menu__titulo {
         justify-content: start;
+        width: min-content;
+        border: none;
+        padding: 0;
     }
     .especialidades__contenedor {
         flex-direction: row;
@@ -287,14 +378,35 @@ body {
     }
     .atencion__seccion--BB {
         border-radius: 0 1rem 1rem 0;
+    } 
+    .formulario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .formulario__mensaje {
+        margin: 0;
+    }
+    .formulario__placeholder--Min {
+        height: min-content;
     }
 }
 @media screen and (min-width:1023px)   {
+    .menu__titulo { 
+        width: max-content;  
+    }
     .portada {
         height: 400px;
     }
     .nosotros__oculto {
         display: block;
+    }
+    
+    .secciones__grande {
+        display: flex;
+    }
+    .contacto, .ubicacion {
+        width: 50%;
     }
 }
 
