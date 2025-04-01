@@ -3,8 +3,8 @@
 
 /* Variables */
 :root {
-    --titulo: "Raleway", sans-serif;
-    --texto: font-family: "Roboto", sans-serif;
+    --titulo:"Raleway", sans-serif;
+    --texto: "Roboto", sans-serif;
     --rosa: #731A4B;
     --azul: #2192BF;
     --azulOscuro: #025E73;
@@ -135,7 +135,7 @@ body {
     font-weight: bold;
     font-size: 1.25rem;
 }
-.servicios, .nosotros, .especialidades {
+.servicios, .nosotros, .especialidades, .atencion, .contacto {
     padding: 1rem 2rem; 
     gap: 1rem;
 }
@@ -170,6 +170,7 @@ body {
     border-radius: 0.5rem;
     border: none;
     margin-top: auto;
+    background-color: #fff;
 }
 .splide__arrows .displayNone, .splide__pagination .displayNone {
     display: none;
@@ -189,6 +190,9 @@ body {
 .nosotros__img{
     width: 100%;
     border-radius: 1rem;
+}
+.nosotros__oculto {
+    display: none;
 }
 
   /* Especialidades */
@@ -210,7 +214,36 @@ body {
     font-size: 2rem;
 } 
 
-@media screen and (min-width:768px)   {
+/* ATENCIÓN */ 
+.atencion__seccion {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    align-items: center;
+    color: #fff;
+} 
+.atencion__titulo {
+    margin-bottom: 1rem;
+}
+.atencion__seccion--BT {
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--rosa);
+}
+.atencion__seccion--Azul {
+    background-color: var(--azul);
+}
+.atencion__seccion--BB {
+    border-radius: 0 0 1rem 1rem;
+    background-color: var(--azulOscuro);
+}
+.atencion__dias {
+    width: 100%;  
+    margin: 1rem;
+    padding: 0 0.5rem; 
+}
+
+
+@media screen and (min-width:767px)   {
     .header__container {
         position: absolute;
         transform: translateY(-100%); 
@@ -241,6 +274,27 @@ body {
     }
     .especialidad {
         width: max-content;
+    }
+    .atencion__contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);  
+    }
+    .atencion__seccion {
+        flex: 1;
+    }
+    .atencion__seccion--BT {
+        border-radius: 1rem 0 0 1rem;
+    }
+    .atencion__seccion--BB {
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+@media screen and (min-width:1023px)   {
+    .portada {
+        height: 400px;
+    }
+    .nosotros__oculto {
+        display: block;
     }
 }
 

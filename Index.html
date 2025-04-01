@@ -12,13 +12,16 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
+        <!-- CABECERA -->
         <div class="header__container">
             <span class="material-symbols-outlined header__iconos header__iconos-Verde">call</span>
             <img class="header__logo" src="assets/img/logo.png" alt="">
             <button onclick="abrirMenu()" class="menu__abrir"><span
                     class="material-symbols-outlined header__iconos header__iconos-Rosa"> menu </span></button>
         </div>
+        <!-- MENU -->
         <nav class="header__menu">
             <ul class="menu__lista">
                 <div class="menu__titulo">
@@ -35,6 +38,7 @@
                 <li class="menu__elemento"><a class="menu__enlace" href="">Contacto</a></li>
             </ul>
         </nav>
+        <!-- PORTADA -->
         <section class="portada">
             <div class="portada__capa">
                 <p>Bienvenid@</p>
@@ -45,19 +49,17 @@
         </section>
     </header>
     <main>
+        <!-- NOSOTROS -->
         <section class="nosotros">
             <h2 class="secciones__titulos nosotros__titulo">¿Quiénes somos?</h2>
             <div class="nosotros__contenido">
                 <div class="nosotros__texto">
                     <p>
-                        Desde nuestra fundación en 2005, el Hospital Luz de Esperanza ha sido un pilar de atención
-                        médica
-                        para la
-                        comunidad de Juárez.
-                        Nuestro compromiso se extiende no solo a quienes buscan atención médica, sino también a nuestros
-                        valiosos
-                        colaboradores, cuyo cuidado y seguridad son nuestra prioridad.
+                        Desde nuestra fundación en 2005, el Hospital Luz de Esperanza ha sido un pilar de atención médica para la comunidad de Juárez. A lo largo de los años, hemos trabajado incansablemente para ofrecer servicios médicos de calidad, siempre con un enfoque humano y empático. Nuestro compromiso no solo está con los pacientes que confían en nosotros para su atención y bienestar, sino también con nuestros colaboradores, quienes son parte fundamental de nuestra misión. 
                     </p> 
+                    <p class="nosotros__oculto">
+                        Velamos por su seguridad, salud y desarrollo profesional, creando un ambiente de trabajo donde la excelencia y el cuidado son valores compartidos. En cada acción, buscamos generar un impacto positivo en la vida de quienes nos rodean, reafirmando nuestro compromiso con la comunidad y el bienestar general.
+                    </p>
                 </div>
                 <div class="nosotros__imagen">
                     <img class="nosotros__img" src="assets/img/nosotros.jpg" alt="">
@@ -65,6 +67,7 @@
             </div>
             <button onclick="window.location.href='#saber-mas'" class="cartas__boton nosotros__boton">Saber más</button>
         </section>
+        <!-- SERVICIOS -->
         <section class="servicios">
             <h3 class="secciones__subtitulos">Nuestros</h3>
             <h2 class="secciones__titulos">Servicios</h2>
@@ -115,6 +118,7 @@
                 </div>
             </section>
         </section>
+        <!-- ESPECIALDIADES -->
         <section class="especialidades">
             <h3 class="secciones__subtitulos">Nuestras</h3>
             <h2 class="secciones__titulos">Especialidades</h2>
@@ -156,6 +160,61 @@
                     <span>Neurología</span>
                 </div>
             </div>
+        </section>
+        <!-- ATENCIÓN -->
+        <section class="atencion">
+            <h3 class="secciones__subtitulos">Siempre</h3>
+            <h2 class="secciones__titulos">Al Servicio</h2>
+            <div class="atencion__contenedor">
+                <section class="atencion__seccion atencion__seccion--BT">
+                    <div class="atencion__icono">
+                        <span class="material-symbols-outlined atencion__icono"> medical_services </span>
+                    </div>
+                    <div class="atencion__texto">
+                        <h3 class="atencion__titulo">Emergencias 24/7</h3>
+                        <p>Ante cualquier situación de emergencia, estamos para atenderle con prontitud y eficacia.</p>
+                    </div>
+                </section> 
+                <section class="atencion__seccion atencion__seccion--Azul">
+                    <div class="atencion__icono">
+                        <span class="material-symbols-outlined atencion__icono"> medical_services </span>
+                    </div>
+                    <div class="atencion__texto">
+                        <h3 class="atencion__titulo">Especialidades</h3>
+                        <p>Médicos calificados disponibles seis días a la semana, comuníquese con nosotros para agendar una cita.</p>
+                    </div>
+                </section> 
+                <section class="atencion__seccion atencion__seccion--BB">
+                    <div class="atencion__icono">
+                        <span class="material-symbols-outlined atencion__icono"> medical_services </span>
+                    </div>
+                    <div class="atencion__texto">
+                        <h3 class="atencion__titulo">Horarios </h3>
+                        <table class="atencion__horarios">
+                            <tr>
+                                <td class="atencion__dias">Lun - Vie</td>
+                                <td class="atencion__dias">8:00 am</td>
+                                <td class="atencion__dias">9:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="atencion__dias">Sábado</td>
+                                <td class="atencion__dias">8:00 am</td>
+                                <td class="atencion__dias">7:00 pm</td>
+                            </tr>
+                            <tr>
+                                <td class="atencion__dias">Domingo</td>
+                                <td class="atencion__dias">8:00 am</td>
+                                <td class="atencion__dias">7:00 pm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section> 
+            </div>
+        </section>
+        <!-- FORMULARIO -->
+        <section class="contacto">
+            <h3 class="secciones__subtitulos">No dudes en</h3>
+            <h2 class="secciones__titulos">Contactarnos</h2>
         </section>
     </main>
     <footer>
