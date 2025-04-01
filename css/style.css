@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     max-width: 320px;
   }
-  
+p{
+  text-align: justify;
+}
   .barra-superior {
     display: flex;
     justify-content: space-between;
@@ -63,7 +65,7 @@ body {
     position: relative;
     text-align: center;
     margin-top: 20px;
-    animation: aparecer-desde-izquierda 10s ease-out;
+    animation: aparecer-desde-izquierda 5s ease-out;
   }
   
   @keyframes aparecer-desde-izquierda {
@@ -94,7 +96,7 @@ body {
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-    animation: aparecer-desde-abajo 10s ease-out;
+    animation: aparecer-desde-abajo 5s ease-out;
   }
   
   @keyframes aparecer-desde-abajo {
@@ -122,6 +124,9 @@ body {
   }
 
   /*Nuestros servicios*/
+  h2{
+    text-align: center;
+  }
   .nuestros-servicios {
     background-color: #f4f4f4;
     color: #333;
@@ -141,19 +146,25 @@ body {
     margin-right: 10px;
     border-radius: 50%; /* Si deseas bordes redondeados */
 }
+/*Iconos*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
 /* CSS para el botón especialidades*/
 .boton-redireccion {
-  display: inline-block;
-  background-color: #007BFF;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.4rem;
+  display: flex;
+  background-color: #025E73;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.boton-redireccion:hover {
-  background-color: #0056b3;
 }
