@@ -264,14 +264,16 @@
     </footer>
     <script>
         function abrirMenu() {
-            const menu = document.querySelector('.header__menu');
-            console.log(menu);
+            const menu = document.querySelector('.header__menu'); 
             menu.classList.toggle('header__menu--activo');
+            const body = document.querySelector('body');
+            body.style.overflow = "hidden";
         }
         function cerrarMenu() {
-            const menu = document.querySelector('.header__menu');
-            console.log(menu);
+            const menu = document.querySelector('.header__menu'); 
             menu.classList.toggle('header__menu--activo');
+            const body = document.querySelector('body');
+            body.style.overflow = "scroll";
         }
         document.addEventListener('DOMContentLoaded', function () {
             var splide = new Splide('.splide', {
