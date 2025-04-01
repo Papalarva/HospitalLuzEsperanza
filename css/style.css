@@ -103,10 +103,12 @@ body {
     height: 50px;
 }
 .menu__enlace {
+    position: relative;
     color: #000;
     text-decoration: none;  
     text-align: center; 
-}
+} 
+
 .portada {
     text-align: center;
     position: relative;
@@ -330,13 +332,12 @@ input[type=number]::-webkit-outer-spin-button {
 } 
 
 @media screen and (min-width:767px)   {
-    .header__container {
+    .header__container { 
         position: absolute;
-        transform: translateY(-100%); 
     }
     .header__menu {
         transform: translateY(0);
-        position: relative;
+        position:static;
         height: min-content; 
     }
     .menu__lista{
@@ -344,6 +345,21 @@ input[type=number]::-webkit-outer-spin-button {
         align-items: center;
         justify-content: space-between;
         padding: 1rem 2rem;
+    }
+    .menu__enlace::after {
+        content: '';   
+        position: absolute;
+        bottom: -5px;   
+        left: 0;
+        width: 0;   
+        height: 4px;   
+        border-radius: 4px;
+        background-color: var(--rosa);   
+        transition: width 0.3s ease;  
+    }
+    
+    .menu__enlace:hover::after {
+        width: 100%;  
     }
     .menu__cerrar {
         display: none;
