@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+p {
+    text-align: justify;
+    margin: 25px;
+}
+
+header {
+    background-color: #2493bf;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    color: #731a4b;
+}
+
+.aimeP3 {
+    max-width: 50%;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.member {
+    flex: 1 1 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+}
+
+.header-container {
+    display: flex; /* Coloca los elementos lado a lado */
+    align-items: center; /* Alinea al mismo nivel verticalmente */
+    justify-content: center;
+}
+
+.icono {
+    max-width: 5%; /* Controla el tamaño del ícono */
+    height: auto; /* Mantiene las proporciones del ícono */
+}
+
+.volver {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+/* Media Query para pantallas de ancho máximo de 320px */
+@media (max-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+
+    p {
+        margin: 15px; /* Ajustar margen para pantallas pequeñas */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .team {
+        flex-direction: column; /* Cambiar la disposición a una columna */
+        gap: 10px;
+    }
+
+    .icono {
+        max-width: 10%; /* Ajustar el tamaño del ícono */
+    }
+
+    .member {
+        padding: 5px; /* Reducir espacio interno para optimizar el diseño */
+    }
+}
