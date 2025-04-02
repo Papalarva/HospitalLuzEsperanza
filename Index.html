@@ -7,93 +7,169 @@
     <title>Diseño Celular</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
-    <!-- Introducción alternativa -->
-    <div class="barra-superior">
-        <div class="icono-llamada" onclick="window.location.href='tel:+1234567890'">📞</div>
-        <div class="logo">
-            <img src="./imagen/HospitalLuzEsperanzaLogo_Icono.png" alt="Logo" />
-        </div>
-        <div class="menu-hamburguesa">
-            ☰
-            <div class="menu-desplegable">
-                <a href="#opcion1">Opción 1</a>
-                <a href="#opcion2">Opción 2</a>
-                <a href="#opcion3">Opción 3</a>
-                <a href="#opcion4">Opción 4</a>
-                <a href="#opcion5">Opción 5</a>
-                <a href="#opcion6">Opción 6</a>
+    <!-- <header class="header">
+        <div class="header__container">
+            <span class="material-symbols-outlined header__iconos header__iconos-Verde">call</span>
+            <img class="header__logo" src="assets/img/logo.png" alt="">
+            <button onclick="abrirMenu()" class="menu__abrir"><span
+                    class="material-symbols-outlined header__iconos header__iconos-Rosa"> menu </span></button>
+        </div> -->
+        <!-- Menu Hamburguesa -->
+        <!-- <nav class="header__menu">
+            <ul class="menu__lista">
+                <div class="menu__titulo">
+                    <img class="menu__logo" src="assets/img/logo.png" alt="">
+                    <h3 class="menu__nombre">Hospital Luz de Esperanza</h3>
+                    <button onclick="cerrarMenu()" class="menu__cerrar">
+                        <span class="material-symbols-outlined menu__close"> close </span>
+                    </button>
+                </div>
+                <li class="menu__elemento"><a class="menu__enlace" href="">Inicio</a></li>
+                <li class="menu__elemento"><a class="menu__enlace" href="">Quienes Somos</a></li>
+                <li class="menu__elemento"><a class="menu__enlace" href="">Especialidades</a></li>
+                <li class="menu__elemento"><a class="menu__enlace" href="">Servicios</a></li>
+                <li class="menu__elemento"><a class="menu__enlace" href="">Contacto</a></li>
+            </ul>
+        </nav> -->
+        <!-- Fin menu Hamburguesa -->
+        <!-- <section class="portada">
+            <div class="portada__capa ">
+                <p>Bienvenid@</p>
+                <cite class="portada__frase">"Cuidamos tu salud con dedicación y compromiso, porque tu bienestar es
+                    nuestra prioridad."</cite>
+                <p>Atención médica de calidad, con un enfoque humano.</p>
             </div>
+        </section>
+    </header>
+    <main>
+        <section class="servicios">
+            <h3 class="secciones__subtitulos">Nuestros</h3>
+            <h2 class="secciones__titulos">Servicios</h2>
+            <section class="splide" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="sevicios__cartas">
+                                <img class="cartas__img" src="assets/img/portada.jpg" alt="">
+                                <h3>Servicio</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non sunt praesentium,
+                                    et doloremque deserunt cupiditate rem, laborum modi exercitationem, ipsam facere?
+                                    Neque, libero voluptate saepe ex quia veritatis nobis.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicios__cartas">
+                                <img class="cartas__img" src="assets/img/portada.jpg" alt="">
+                                <h3>Servicio</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non sunt praesentium,
+                                    et doloremque deserunt cupiditate rem, laborum modi exercitationem, ipsam facere?
+                                    Neque, libero voluptate saepe ex quia veritatis nobis.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicios__cartas">
+                                <img class="cartas__img" src="assets/img/portada.jpg" alt="">
+                                <h3>Servicio</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non sunt praesentium,
+                                    et doloremque deserunt cupiditate rem, laborum modi exercitationem, ipsam facere?
+                                    Neque, libero voluptate saepe ex quia veritatis nobis.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <script>
+        </script> -->
+        <div class="rectangulo-crema">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                Desde nuestra fundación en 2005, el Hospital Luz de Esperanza ha sido un pilar de atención médica para
+                la
+                comunidad de Juárez.
+                Nuestro compromiso se extiende no solo a quienes buscan atención médica, sino también a nuestros
+                valiosos
+                colaboradores, cuyo cuidado y seguridad son nuestra prioridad.
+            </p>
+            <button onclick="window.location.href='./quienesSomos.html'" class="boton-redireccion">Saber más</button>
         </div>
-    </div>
-    <div class="contenido-imagen">
-        <img src="https://www.adotrip.com/public/images/medical/master_images/6492966b15809-Untitled%20design%20(4)%20(1).png"
-            alt="Imagen">
-        <div class="texto-sobre-imagen">
-            <h1>Título</h1>
-            <p>Este es un párrafo.</p>
-            <button onclick="window.location.href='#contacto'">Contacto</button>
+        <!-- Fin introducción alternativa -->
+        <!-- Nuestras Especialidades -->
+        <div class="nuestros-servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="especialidad">
+                <span class="material-symbols-outlined">
+                    cardiology
+                </span> &nbsp;&nbsp;&nbsp;
+                <span>Cardiología</span>
+            </div>
+            <div class="especialidad">
+                <span class="material-symbols-outlined">
+                    pediatrics
+                </span> &nbsp;&nbsp;&nbsp;
+                <span>Pediatría</span>
+            </div>
+            <div class="especialidad">
+                <span class="material-symbols-outlined">
+                    dermatology
+                </span> &nbsp;&nbsp;&nbsp;
+                <span>Dermatología</span>
+            </div>
+            <div class="especialidad">
+                <span class="material-symbols-outlined">
+                    neurology
+                </span> &nbsp;&nbsp;&nbsp;
+                <span>Neurología</span>
+            </div>
+            <div class="especialidad">
+                <span class="material-symbols-outlined">
+                    psychology
+                </span> &nbsp;&nbsp;&nbsp;
+                <span>Psicología</span>
+            </div>
+            <div class="especialidad">
+                <span class="material-symbols-outlined">
+                    visibility
+                </span> &nbsp;&nbsp;&nbsp;
+                <span>Neurología</span>
+            </div>
+            <!-- Botón para redirección -->
+            <a href="especialidades-completas.html" class="boton-redireccion">Ver todas las especialidades</a>
         </div>
-    </div>
-    <div class="rectangulo-crema">
-        <h2>¿Quiénes somos?</h2>
-        <p>
-            Desde nuestra fundación en 2005, el Hospital Luz de Esperanza ha sido un pilar de atención médica para la
-            comunidad de Juárez.
-            Nuestro compromiso se extiende no solo a quienes buscan atención médica, sino también a nuestros valiosos
-            colaboradores, cuyo cuidado y seguridad son nuestra prioridad.
-        </p>
-        <button onclick="window.location.href='#saber-mas'" class="boton-redireccion">Saber más</button>
-    </div>
-    <!-- Fin introducción alternativa -->
-    <!-- Nuestras Especialidades -->
-    <div class="nuestros-servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="especialidad">
-            <span class="material-symbols-outlined">
-                cardiology
-            </span> &nbsp;&nbsp;&nbsp;
-            <span>Cardiología</span>
-        </div>
-        <div class="especialidad">
-            <span class="material-symbols-outlined">
-                pediatrics
-            </span> &nbsp;&nbsp;&nbsp;
-            <span>Pediatría</span>
-        </div>
-        <div class="especialidad">
-            <span class="material-symbols-outlined">
-                dermatology
-            </span> &nbsp;&nbsp;&nbsp;
-            <span>Dermatología</span>
-        </div>
-        <div class="especialidad">
-            <span class="material-symbols-outlined">
-                neurology
-            </span> &nbsp;&nbsp;&nbsp;
-            <span>Neurología</span>
-        </div>
-        <div class="especialidad">
-            <span class="material-symbols-outlined">
-                psychology
-            </span> &nbsp;&nbsp;&nbsp;
-            <span>Psicología</span>
-        </div>
-        <div class="especialidad">
-            <span class="material-symbols-outlined">
-                visibility
-            </span> &nbsp;&nbsp;&nbsp;
-            <span>Neurología</span>
-        </div>
-        <!-- Botón para redirección -->
-        <a href="especialidades-completas.html" class="boton-redireccion">Ver todas las especialidades</a>
-    </div>
-    <!-- Fin de nuestras especialidades -->
-    <!-- Servicio de la comunidad -->
-
-    <!-- Fin del servicio a la comunidad -->
+        <!-- Fin de nuestras especialidades -->
+        <!-- Servicio de la comunidad -->
+        <section class="rectangulo">
+            <div class="parte parte1">
+              <div class="contenido">
+                <span class="icono material-symbols-outlined">medical_services</span>
+                <h4 class="titulo">Título Parte 1</h4>
+                <p class="parrafo">Este es un párrafo descriptivo. El texto está alineado de manera justificada, para dar una apariencia profesional y estructurada.</p>
+              </div>
+            </div>
+            <div class="parte parte2">
+              <div class="contenido">
+                <span class="icono material-symbols-outlined">local_hospital</span>
+                <h4 class="titulo">Título Parte 2</h4>
+                <p class="parrafo">Este es un párrafo descriptivo. El texto está alineado de manera justificada, para dar una apariencia profesional y estructurada.</p>
+              </div>
+            </div>
+            <div class="parte parte3">
+              <div class="contenido">
+                <span class="icono material-symbols-outlined">health_and_safety</span>
+                <h4 class="titulo">Título Parte 3</h4>
+                <p class="parrafo">Este es un párrafo descriptivo. El texto está alineado de manera justificada, para dar una apariencia profesional y estructurada.</p>
+              </div>
+            </div>
+          </section>
+        <!-- Fin del servicio a la comunidad -->
 </body>
 
 </html>

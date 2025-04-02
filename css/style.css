@@ -1,159 +1,304 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    max-width: 320px;
-  }
-p{
-  text-align: justify;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  max-width: 320px;
 }
-  .barra-superior {
+
+p {
+  text-align: justify
+}
+
+/* Import Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables */
+:root {
+    --titulo: "Raleway", sans-serif;
+    --texto: font-family: "Roboto", sans-serif;
+    --rosa: #731A4B;
+    --azul: #2192BF;
+    --azulOscuro: #025E73;
+    --verde: #72A69C;
+}
+/* Formateo de página */
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--texto);
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+    position: relative;
+}
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-  }
-  
-  .barra-superior .logo {
-    flex-grow: 1;
+    padding: 1rem 2rem; 
+}
+.header__logo{
+    height: 50px;
+}
+.header__iconos {
+    font-size: 50px;
+}
+.header__iconos-Verde {
+    color: var(--verde);
+}
+.header__iconos-Rosa {
+    color: var(--rosa);
+}
+.header__menu {
+    position: absolute;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;  
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 1s ease;  
+    overflow: hidden;
+    transform: translateY(-100%);
+}
+.header__menu--activo {
+    pointer-events: auto;
+    transform: translateY(0%);
+}
+.menu__abrir, .menu__cerrar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.menu__close {
+    font-size: 3rem;
+    color: var(--rosa);
+}
+.menu__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.menu__elemento{
+    padding: 1rem 2rem;  
+    width: 100%; 
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+.menu__titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem; 
+    color: var(--azul);
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    gap: 1rem;
+} 
+.menu__logo {
+    height: 50px;
+}
+.menu__enlace {
+    color: #000;
+    text-decoration: none;  
+    text-align: center; 
+}
+.portada {
+    text-align: center;
+    position: relative;
     display: flex;
     justify-content: center;
-  }
-  
-  .barra-superior .logo img {
-    max-width: 50px;
-    height: auto;
-  }
-  
-  .barra-superior .icono-llamada {
-    cursor: pointer;
-  }
-  
-  .barra-superior .menu-hamburguesa {
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .menu-hamburguesa .menu-desplegable {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #444;
-    color: white;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-hamburguesa:hover .menu-desplegable {
-    display: block;
-  }
-  
-  .menu-desplegable a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    margin: 5px 0;
-  }
-  
-  .menu-desplegable a:hover {
-    text-decoration: underline;
-  }
-  
-  .contenido-imagen {
-    position: relative;
-    text-align: center;
-    margin-top: 20px;
-    animation: aparecer-desde-izquierda 5s ease-out;
-  }
-  
-  @keyframes aparecer-desde-izquierda {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-  }
-  
-  .contenido-imagen img {
-    width: 100%;
-  }
-  
-  .contenido-imagen .texto-sobre-imagen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-  
-  .rectangulo-crema {
-    background-color: #F2D0A7;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    animation: aparecer-desde-abajo 5s ease-out;
-  }
-  
-  @keyframes aparecer-desde-abajo {
-    0% {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes aparecer-desde-izquierda {
-    0% {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  /*Nuestros servicios*/
-  h2{
-    text-align: center;
-  }
-  .nuestros-servicios {
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-}
-.especialidad {
-    display: flex;
     align-items: center;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
+    height: 300px;
+    background-image: url(../assets/img/portada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.portada__capa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+.portada__frase {
+    font-family: var(--titulo);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.servicios {
+    padding: 1rem 2rem; 
+    gap: 1rem;
+}
+.secciones__subtitulos {
+    color: #555;
+}
+.secciones__titulos {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+.sevicios__cartas {
+    background-color: var(--azul);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    color: white; 
+    width: 100%;
+    height: 100%;
+} 
+.cartas__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 1rem;
 }
-.especialidad img {
-    width: 40px; /* Ajusta el tamaño del icono */
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%; /* Si deseas bordes redondeados */
+.cartas__boton { 
+    width: max-content;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: auto;
 }
+.splide__arrows .displayNone, .splide__pagination .displayNone {
+    display: none;
+}
+
+@media screen and (min-width:768px)   {
+    .header__container {
+        position: absolute;
+        transform: translateY(-100%); 
+    }
+    .header__menu {
+        transform: translateY(0);
+        position: relative;
+        height: min-content; 
+    }
+    .menu__lista{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .menu__cerrar {
+        display: none;
+    } 
+    .menu__elemento {
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .menu__titulo {
+        justify-content: start;
+    }
+}
+@keyframes aparecer-desde-izquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contenido-imagen img {
+  width: 100%;
+}
+
+.contenido-imagen .texto-sobre-imagen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.rectangulo-crema {
+  background-color: #F2D0A7;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  animation: aparecer-desde-abajo 5s ease-out;
+}
+
+@keyframes aparecer-desde-abajo {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecer-desde-izquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*Nuestros servicios*/
+h2 {
+  text-align: center;
+}
+
+.nuestros-servicios {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.especialidad {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.especialidad img {
+  width: 40px;
+  /* Ajusta el tamaño del icono */
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  /* Si deseas bordes redondeados */
+}
+
 /*Iconos*/
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
 }
+
 /* CSS para el botón especialidades*/
 .boton-redireccion {
   align-items: center;
@@ -167,4 +312,55 @@ p{
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
+}
+.rectangulo {
+  display: flex;
+  flex-direction: column; /* Apilado horizontal */
+  width: 100%;
+  height: auto; /* Ajustable según contenido */
+}
+
+.parte {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; /* Espaciado interno */
+}
+
+.contenido {
+  text-align: center; /* Centrado del contenido */
+}
+
+.icono {
+  font-size: 3rem; /* Tamaño del ícono */
+  color: white; /* Color del ícono */
+  margin-bottom: 1rem; /* Espaciado entre ícono y título */
+}
+
+.titulo {
+  font-family: var(--titulo);
+  font-size: 1.25rem; /* Tamaño del título */
+  color: white; /* Color del título */
+  margin-bottom: 0.5rem; /* Espaciado entre título y párrafo */
+}
+
+.parrafo {
+  font-family: var(--texto);
+  font-size: 1rem;
+  color: white; /* Color del texto */
+  text-align: justify; /* Párrafo justificado */
+}
+
+/* Colores personalizados para cada parte */
+.parte1 {
+  background-color: #731A4B; /* Rosa oscuro */
+}
+
+.parte2 {
+  background-color: #2192BF; /* Azul */
+}
+
+.parte3 {
+  background-color: #72A69C; /* Verde */
 }
