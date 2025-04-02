@@ -1,11 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- METAS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="robots" content="index, follow">
+    <meta class="description" content="Página del Hospital Luz de Esperanza">
+    <meta property="og:title" content="Hospital Luz de Esperanza">
+    <meta property="og:description"
+        content="Información de contacto, de servicios y de especialidades del Hospital Luz de Esperanza">
+    <meta property="og:image" content="">
+    <!-- LINKS -->
+    <link rel="icon" type="image/jpg" href="assets/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hospital Luz de Esperanza</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <section class="cabecera">
+            <a href=""><span class="material-symbols-outlined cabecera__icono cabecera__icono-Azul">call</span></a>
+            <img class="cabecera__logo" src="assets/img/logo.png" alt="">
+            <button onclick="abrirMenu()" class="menu__boton"><span
+                    class="material-symbols-outlined cabecera__icono cabecera__icono-Rosa"> menu </span></button>
+        </section>
+        <nav class="menu">
+            <div class="menu__titulo">
+                <img class="menu__logo" src="assets/img/logo.png" alt="">
+                <h3 class="menu__nombre">Hospital Luz de Esperanza</h3>
+                <button onclick="cerrarMenu()" class="menu__boton">
+                    <span class="material-symbols-outlined cabecera__icono cabecera__icono-Rosa"> close </span>
+                </button>
+            </div>
+            <ul class="menu__lista">
+                <a class="menu__enlace" href="">
+                    <li>Inicio</li>
+                </a>
+                <a class="menu__enlace" href="">
+                    <li>Quienes Somos</li>
+                </a>
+                <a class="menu__enlace" href="">
+                    <li>Especialidades</li>
+                </a>
+                <a class="menu__enlace" href="">
+                    <li>Servicios</li>
+                </a>
+                <a class="menu__enlace" href="">
+                    <li>Contacto</li>
+                </a>
+            </ul>
+        </nav>
+        <section class="portada">
+            <div class="portada__texto">
+                <p>Bienvenid@</p>
+                <cite class="portada__frase">"Cuidamos tu salud con dedicación y compromiso, porque tu bienestar es
+                    nuestra prioridad."</cite>
+                <p>Atención médica de calidad, con un enfoque humano.</p>
+            </div>
+            <div class="portada__imagen">
+                <img class="portada__img" src="assets/img/portada.jpg" alt="">
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <!-- NOSOTROS -->
+        <section class="main__seccion nosotros">
+            <h2 class="seccion__titulo">¿Quiénes somos?</h2>
+            <div class="nosotros__contenido">
+                <div class="nosotros__texto">
+                    <p>
+                        Desde nuestra fundación en 2005, el Hospital Luz de Esperanza ha sido un pilar de atención
+                        médica para la comunidad de Juárez. A lo largo de los años, hemos trabajado incansablemente para
+                        ofrecer servicios médicos de calidad, siempre con un enfoque humano y empático. Nuestro
+                        compromiso no solo está con los pacientes que confían en nosotros para su atención y bienestar,
+                        sino también con nuestros colaboradores, quienes son parte fundamental de nuestra misión.
+                    </p>
+                    <p class="nosotros__oculto">
+                        Velamos por su seguridad, salud y desarrollo profesional, creando un ambiente de trabajo donde
+                        la excelencia y el cuidado son valores compartidos. En cada acción, buscamos generar un impacto
+                        positivo en la vida de quienes nos rodean, reafirmando nuestro compromiso con la comunidad y el
+                        bienestar general.
+                    </p>
+                </div>
+                <div class="nosotros__imagen">
+                    <img class="nosotros__img" src="assets/img/nosotros.jpg" alt="">
+                </div>
+            </div>
+            <a class="boton" href="">Ver más</a>
+        </section>
+        <!-- SERVICIOS -->
+        <section class="main__seccion">
+            <h3 class="seccion__subtitulo">Nuestros</h3>
+            <h2 class="seccion__titulo">Servicios</h2>
+            <section class="splide seccion__splide" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/urgenciasEmergencias.jpg" alt="">
+                                <h3>Urgencias y Emergencias</h3>
+                                <p>Servicio disponible las 24 horas para atender casos críticos como accidentes,
+                                    infartos, traumatismos graves o complicaciones médicas repentinas. Equipado con
+                                    tecnología avanzada y personal especializado para estabilizar pacientes y derivarlos
+                                    a las áreas correspondientes.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/cirujiaGeneralEspecialidad.jpg" alt="">
+                                <h3>Cirugía General y Especializada</h3>
+                                <p>Abarca procedimientos quirúrgicos programados o de emergencia, desde apendicectomías
+                                    hasta operaciones cardíacas. Incluye cirugía laparoscópica mínimamente invasiva y
+                                    seguimiento postoperatorio para una recuperación segura.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/maternidadNeonatologia.jpg" alt="">
+                                <h3>Maternidad y Neonatología</h3>
+                                <p>Atención integral para embarazos de bajo y alto riesgo, partos naturales, cesáreas y
+                                    cuidados posnatales. Incluye unidad de neonatología para recién nacidos prematuros o
+                                    con complicaciones, con incubadoras y monitoreo constante.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/pediatria.jpg" alt="">
+                                <h3>Pediatría</h3>
+                                <p>Servicio dedicado a la salud infantil, enfocado en prevención, diagnóstico y
+                                    tratamiento de enfermedades en pacientes desde recién nacidos hasta adolescentes.
+                                    Incluye vacunación, control de crecimiento y manejo de patologías crónicas.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/oncologia.jpg" alt="">
+                                <h3>Oncología</h3>
+                                <p>Diagnóstico y tratamiento multidisciplinario del cáncer, con terapias como
+                                    quimioterapia, radioterapia e inmunoterapia. Ofrece acompañamiento psicológico y
+                                    programas de rehabilitación para mejorar la calidad de vida del paciente.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/cardiologia.jpg" alt="">
+                                <h3>Cardiología</h3>
+                                <p>Prevención, evaluación y manejo de enfermedades cardiovasculares. Incluye pruebas
+                                    como electrocardiogramas, ecocardiogramas, cateterismos y rehabilitación cardíaca
+                                    post-infarto.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/terapiaFisica.jpg" alt="">
+                                <h3>Terapia Física y Rehabilitación</h3>
+                                <p>Programas personalizados para recuperar movilidad tras cirugías, accidentes o
+                                    enfermedades neurológicas. Utiliza técnicas como hidroterapia, electroestimulación y
+                                    ejercicios adaptados.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="sevicio__carta">
+                                <img class="servicio__img" src="assets/img/psicologia.jpg" alt="">
+                                <h3>Salud Mental</h3>
+                                <p>Atención psiquiátrica y psicológica para trastornos como depresión, ansiedad,
+                                    bipolaridad o adicciones. Incluye terapia individual, grupal y hospitalización breve
+                                    en casos de crisis agudas.</p>
+                                <button class="cartas__boton">Ver más</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <!-- ESPECIALIDADES -->
+        <section class="main__seccion">
+            <h3 class="seccion__subtitulo">Nuestras</h3>
+            <h2 class="seccion__titulo">Especialidades</h2>
+            <div class="especialidades__contenedor">
+                <div class="especialidad" onmouseover="this.style.border='1px solid #731a4b'" onmouseout="this.style.border='1px solid #ccc'">
+                    <span class="material-symbols-outlined especialidad__iconos">
+                        cardiology
+                    </span> &nbsp;&nbsp;&nbsp;
+                    <span>Cardiología</span>
+                </div>
+                <div class="especialidad" onmouseover="this.style.border='1px solid #731a4b'" onmouseout="this.style.border='1px solid #ccc'">
+                    <span class="material-symbols-outlined especialidad__iconos">
+                        pediatrics
+                    </span> &nbsp;&nbsp;&nbsp;
+                    <span>Pediatría</span>
+                </div>
+                <div class="especialidad" onmouseover="this.style.border='1px solid #731a4b'" onmouseout="this.style.border='1px solid #ccc'">
+                    <span class="material-symbols-outlined especialidad__iconos">
+                        dermatology
+                    </span> &nbsp;&nbsp;&nbsp;
+                    <span>Dermatología</span>
+                </div>
+                <div class="especialidad" onmouseover="this.style.border='1px solid #731a4b'" onmouseout="this.style.border='1px solid #ccc'">
+                    <span class="material-symbols-outlined especialidad__iconos">
+                        neurology
+                    </span> &nbsp;&nbsp;&nbsp;
+                    <span>Neurología</span>
+                </div>
+                <div class="especialidad" onmouseover="this.style.border='1px solid #731a4b'" onmouseout="this.style.border='1px solid #ccc'">
+                    <span class="material-symbols-outlined especialidad__iconos">
+                        psychology
+                    </span> &nbsp;&nbsp;&nbsp;
+                    <span>Psicología</span>
+                </div>
+                <div class="especialidad" onmouseover="this.style.border='1px solid #731a4b'" onmouseout="this.style.border='1px solid #ccc'">
+                    <span class="material-symbols-outlined especialidad__iconos">
+                        visibility
+                    </span> &nbsp;&nbsp;&nbsp;
+                    <span>Neurología</span>
+                </div>
+            </div>
+        </section>
+        <!-- ATENCIÓN -->
+        <section class="main__seccion">
+            <h3 class="seccion__subtitulo">Siempre</h3>
+            <h2 class="seccion__titulo">Al Servicio</h2>
+            <div class="atencion__contenedor">
+                <section class="atencion__seccion atencion__seccion--BT">
+                    <div class="atencion__icono">
+                        <span class="material-symbols-outlined atencion__icono"> medical_services </span>
+                    </div>
+                    <div class="atencion__texto">
+                        <h3 class="atencion__titulo">Emergencias 24/7</h3>
+                        <p>Ante cualquier situación de emergencia, estamos para atenderle con prontitud y eficacia.</p>
+                    </div>
+                </section>
+                <section class="atencion__seccion atencion__seccion--Azul">
+                    <div class="atencion__icono">
+                        <span class="material-symbols-outlined atencion__icono"> medical_services </span>
+                    </div>
+                    <div class="atencion__texto">
+                        <h3 class="atencion__titulo">Especialidades</h3>
+                        <p>Médicos calificados disponibles seis días a la semana, comuníquese con nosotros para agendar
+                            una cita.</p>
+                    </div>
+                </section>
+                <section class="atencion__seccion atencion__seccion--BB">
+                    <div class="atencion__icono">
+                        <span class="material-symbols-outlined atencion__icono"> medical_services </span>
+                    </div>
+                    <div class="atencion__texto">
+                        <h3 class="atencion__titulo">Horarios </h3>
+                        <table class="atencion__horarios">
+                            <tr class="atencion__hora">
+                                <td class="atencion__dias">Lun-Vie</td>
+                                <td class="atencion__dias">8:00 am</td>
+                                <td class="atencion__dias">9:00 pm</td>
+                            </tr>
+                            <tr class="atencion__hora">
+                                <td class="atencion__dias">Sábado</td>
+                                <td class="atencion__dias">8:00 am</td>
+                                <td class="atencion__dias">7:00 pm</td>
+                            </tr>
+                            <tr class="atencion__hora">
+                                <td class="atencion__dias">Domingo</td>
+                                <td class="atencion__dias">8:00 am</td>
+                                <td class="atencion__dias">7:00 pm</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div class="main__seccion secciones__grande">
+            <!-- FORMULARIO -->
+            <section class="contacto">
+                <h3 class="seccion__subtitulo">No dudes en</h3>
+                <h2 class="seccion__titulo">Contactarnos</h2>
+                <div>
+                    <form method="POST" class="formulario" id="formulario">
+                        <label for="nombre" class="formulario__label">
+                            <input type="text" id="nombre" placeholder=" " class="formulario__input" onfocus="resaltado(nombre)">
+                            <span class="formulario__placeholder">Nombre</span>
+                            <span class="error" id="error-nombre"></span>
+                        </label>
+                        <label for="apellidoPa" class="formulario__label">
+                            <input type="text" id="apellidoPa" placeholder=" " class="formulario__input" onfocus="resaltado(apellidoPa)">
+                            <span class="formulario__placeholder">Apellido paterno</span>
+                            <span class="error" id="error-apellidoPa"></span>
+                        </label>
+                        <label for="apellidoMa" class="formulario__label">
+                            <input type="text" id="apellidoMa" placeholder=" " class="formulario__input" onfocus="resaltado(apellidoMa)">
+                            <span class="formulario__placeholder">Apellido materno</span>
+                            <span class="error" id="error-apellidoMa"></span>
+                        </label>
+                        <label for="edad" class="formulario__label">
+                            <input type="number" id="edad" placeholder=" " class="formulario__input" onfocus="resaltado(edad)" min="10">
+                            <span class="formulario__placeholder">Teléfono</span>
+                            <span class="error" id="error-edad"></span>
+                        </label>
+                        <label for="email" class="formulario__label">
+                            <input type="email" id="email" placeholder=" " class="formulario__input" onfocus="resaltado(email)">
+                            <span class="formulario__placeholder">Correo</span>
+                            <span class="error" id="error-email"></span>
+                        </label>
+                        <label for="mensaje" class="formulario__label formulario__mensaje">
+                            <textarea type="email" id="mensaje" placeholder=" " class="formulario__input" onfocus="resaltado(mensaje)"></textarea>
+                            <span class="formulario__placeholder" style="height: min-content;">Mensaje</span>
+                        </label>
+                    </form>
+                </div>
+            </section>
+            <!-- UBICANOS -->
+            <section class="ubicacion">
+                <h3 class="seccion__subtitulo">No dudes en</h3>
+                <h2 class="seccion__titulo">Venir</h2>
+                <iframe class="ubicacion__iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54291.12108433445!2d-106.53254628181458!3d31.737876105768567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75998aab8c9e1%3A0x858f862537ffe340!2sHospital%20General%20de%20Ciudad%20Ju%C3%A1rez!5e0!3m2!1ses!2smx!4v1743520342726!5m2!1ses!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <img class="footer___img" src="assets/img/logo.png" alt="">
+        <h3 class="footer__titulo">Hospital Luz de Esperanza</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                classes: {
+                    arrow: 'splide__arrow displayNone',
+                    pagination: 'splide__pagination displayNone',
+                    page: 'splide__pagination__page displayNone',
+                },
+                perPage: 4,
+                gap: '1rem',
+                breakpoints: {
+                    1400: { perPage: 3, gap: '1rem' },
+                    1000: { perPage: 2, gap: '1rem' },
+                    425: { perPage: 1, gap: '1rem' },
+                },
+                rewind: true
+            });
+            splide.mount();
+
+        });
+    </script>
 </body>
+
 </html>
