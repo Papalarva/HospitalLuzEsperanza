@@ -1,0 +1,144 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #2493bf;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volver {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icono {
+    max-width: 50px;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #731a4b;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #2493bf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #1a6d8e;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2493bf;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Estilos Responsivos */
+/* Pantallas pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-container {
+        gap: 5px;
+    }
+
+    .icono {
+        max-width: 40px;
+    }
+}
+
+/* Pantallas medianas (480px - 1024px) */
+@media (min-width: 480px) and (max-width: 1024px) {
+    main {
+        padding: 15px;
+    }
+
+    .contact-info ul {
+        margin: 10px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+    }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1024px) {
+    main {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .contact-info,
+    .contact-form {
+        margin-bottom: 30px;
+    }
+}
