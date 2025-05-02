@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #2493bf;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volver {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icono {
+    max-width: 50px;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.especialidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    color: #731a4b;
+}
+
+/* Estilo del footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2493bf;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsivo: Menor de 720px */
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul {
+        margin: 10px;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .icono {
+        max-width: 40px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 20px;
+    }
+}
+
+/* Responsivo: Regular PC y mayor de 720px */
+@media (min-width: 720px) {
+    .header-container {
+        gap: 20px;
+    }
+
+    li {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    p {
+        max-width: 60%;
+    }
+}

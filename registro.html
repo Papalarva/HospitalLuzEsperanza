@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Hospitalario</title>
+    <link rel="stylesheet" href="./css/logIn.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./js/logIn.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro en el Hospital</h1>
+        <div class="form-selector">
+            <label for="user-type">Selecciona tu perfil:</label>
+            <select id="user-type">
+                <option value="paciente">Paciente</option>
+                <option value="medico">Médico</option>
+                <option value="admin">Administrador</option>
+            </select>
+        </div>
+        <div class="form-container">
+            <form id="registration-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+
+                <div id="extra-fields"></div>
+
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
